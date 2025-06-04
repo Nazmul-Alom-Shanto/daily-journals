@@ -1,0 +1,47 @@
+{
+    "name": "daily-journals",
+    "version": "1.0.0",
+    "description": "It is a practice project",
+    "main": "main.js",
+    "author": "Nazmul Alom Shanto",
+    "license": "ISC",
+    "type": "module",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "dependencies": {
+        "boolean": "^3.2.0",
+        "buffer-crc32": "^0.2.13",
+        "cacheable-lookup": "^5.0.4",
+        "cacheable-request": "^7.0.4",
+        "clone-response": "^1.0.3",
+        "debug": "^4.4.1",
+        "decompress-response": "^6.0.0",
+        "defer-to-connect": "^2.0.1",
+        "define-data-property": "^1.1.4",
+        "define-properties": "^1.2.1",
+        "detect-node": "^2.1.0",
+        "dictionary-en": "^4.0.0",
+        "keytar": "^7.9.0",
+        "nspell": "^2.1.5"
+    },
+    "devDependencies": {
+        "electron": "^36.2.1",
+        "electron-builder": "^24.13.3"
+    },
+    "build": {
+        "appId": "com.shanto.dailyjournals",
+        "productName": "Daily Journals",
+        "files": [
+            "**/*"
+        ],
+        "directories": {
+            "buildResources": "assets"
+        },
+        "win": {
+            "target": "nsis",
+            "icon": "icon.ico"
+        }
+    }
+}

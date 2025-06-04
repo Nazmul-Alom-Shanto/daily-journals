@@ -1,0 +1,26 @@
+# Node modules (if using Node.js)
+node_modules/
+
+# Build folders
+dist/
+build/
+With Dubuging/
+
+
+
+# # Environment variables (if any)
+# .env
+
+# Local files or secrets
+# *.key
+# *.pem
+
+# OS files
+# .DS_Store
+# Thumbs.db
+
+# Logs
+#*.log
+
+# JSON data files you don’t want in repo (optional)
+#data/*.json

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com;">
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="loader">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
+    <div class="body">
+        <div class="sidebar">
+            <button id="new-note" class="note-title">
+                <i class="fa-solid fa-pen-to-square"></i>
+                
+                New Note
+            </button>
+            <div class="sidebar-body">
+                
+            </div>
+          
+        </div>
+        <div class="resizer"></div>
+        <div class="view">
+            <div class="header">
+                <empty></empty>
+                <h1>Daily Journals</h1>
+                <i id="settings" class="fa-solid fa-cog"></i>
+            </div>
+            <div class="view-body">
+            <div class="view-body-container">
+                <h1 class="view-title"></h1>
+                <span class="curr-date"></span>
+                <p class="view-note"></p>
+            </div>
+            <div class="edit-body-container">
+                <input class="note-title-input" placeholder="Title">
+                <textarea class="note-body-input" placeholder="Note"></textarea>
+                <button class="note-save-btn">Save</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="delete-warning">
+        <div class="delete-warning-container">
+            <h2>Delete this note?</h2>
+            <p>This will delete <span class="in-progress-delete-note-title"></span> Parmanently</p>
+            <div class="btns">
+                <button id="delete-note-btn-no">Cancel</button>
+                <button id="delete-note-btn-yes" data-type="confirm">Delete</button>
+            
+            </div>
+        </div>
+    </div>
+    
+    <script src="./renderer.js"></script>
+</body>
+</html>
