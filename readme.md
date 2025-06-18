@@ -25,7 +25,7 @@ A privacy-focused, offline-first journaling app designed to store personal thoug
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/daily-journals.git
+git clone https://github.com/Nazmul-Alom-Shanto/daily-journals.git
 cd daily-journals
 
 # Install dependencies (if any)
